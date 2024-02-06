@@ -41,3 +41,28 @@ Para establecer una conexión segura a través del protocolo SSH utilizando clav
 De esta manera, se podrá conectar al servidor remoto de forma segura utilizando claves SSH, sin necesidad de ingresar una contraseña.
 
 
+**Agregar la clave pública a la cuenta de GitHub:**
+ Se accede a la configuración de SSH de la cuenta de GitHub en la página web de GitHub.
+ En `Settings > SSH and GPG keys > New SSH key`, se pega el contenido de la clave pública en el campo proporcionado.
+
+**Clonar el repositorio de GitHub:**
+ Se utiliza el comando `git clone` para clonar el repositorio de GitHub que contiene el README que se desea autenticar en la máquina local.
+     ```
+     git clone git@github.com:usuario/repo.git
+     ```
+
+ **Editar y autenticar el README:**
+ Se navega hasta el directorio del repositorio clonado y se edita el archivo README según las necesidades.
+ Una vez realizados los cambios, se guarda el archivo.
+
+ **Agregar, confirmar y empujar los cambios:**
+ Se utilizan los comandos `git add`, `git commit` y `git push` para agregar, confirmar y empujar los cambios al repositorio remoto en GitHub.
+     ```
+     git add README.md
+     git commit -m "Actualizar README con autenticación SSH"
+     git push origin main
+     ```
+ Se asegura de reemplazar `main` con el nombre de la rama principal si es diferente en el repositorio.
+
+Una vez completados estos pasos, el README estará autenticado con SSH en GitHub. Los cambios realizados se reflejarán en el repositorio remoto y estarán disponibles para otros usuarios.
+
