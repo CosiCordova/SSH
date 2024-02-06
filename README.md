@@ -5,11 +5,9 @@ Para establecer una conexión segura a través del protocolo SSH utilizando clav
 1. **Generar un par de claves SSH en la máquina local:**
 
  Se puede utilizar el comando `ssh-keygen` en la terminal para generar un par de claves RSA de 2048 bits.
-
      ```
      ssh-keygen -t rsa -b 2048 -f ~/ssh/holo
      ```
-
  Se debe seguir las indicaciones para seleccionar la ubicación predeterminada o personalizada para almacenar las claves, y opcionalmente, establecer una frase de contraseña para proteger la clave privada.
 
 2. **Copiar la clave pública al servidor remoto:**
