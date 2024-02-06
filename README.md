@@ -57,7 +57,7 @@ De esta manera, se podrá conectar al servidor remoto de forma segura utilizando
 
  **Agregar, confirmar y empujar los cambios:**
  Se utilizan los comandos `git add`, `git commit` y `git push` para agregar, confirmar y empujar los cambios al repositorio remoto en GitHub.
-     ```bash
+     ```
      git add README.md
      git commit -m "Actualizar README con autenticación SSH"
      git push origin main
